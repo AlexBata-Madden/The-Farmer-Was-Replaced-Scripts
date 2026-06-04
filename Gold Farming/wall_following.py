@@ -1,34 +1,39 @@
 def generate_full_map_maze():
 	clear()
 	plant(Entities.Bush)
-	n_substance = get_world_size() * 2**(num_unlocked(Unlocks.Mazes) - 1)
-	use_item(Items.Weird_Substance, n_substance)
-	
+	use_item(Items.Weird_Substance, get_world_size() * 2**(num_unlocked(Unlocks.Mazes) - 1))
+
 
 def rotate(d):
 	first = d[0]
 	d.remove(first)
 	d.append(first)
-	return d
 
-generate_full_map_maze() 
+
+def rotate_n(d, n):
+	for i in range(n):
+		rotate(d)
+
+
+def wall_follow_step(directions):
+	# directions = [left, forward, right, back]
+	rotations = [3, 0, 1, 2]
+
+	for i in range(4):
+		if can_move(directions[i]):
+			move(directions[i])
+			rotate_n(directions, rotations[i])
+			return
+
+
+generate_full_map_maze()
+
 directions = [West, North, East, South]
 
 while True:
-	if(get_entity_type() == Entities.Treasure):
+	if get_entity_type() == Entities.Treasure:
 		harvest()
 		generate_full_map_maze()
-	if(can_move(directions[0])):
-		move(directions[0])
-		rotate(directions)
-		rotate(directions)
-		rotate(directions)
-	elif(can_move(directions[1])):
-		move(directions[1])
-	elif(can_move(directions[2])):
-		move(directions[2])
-		rotate(directions)
-	elif(can_move(directions[3])):
-		move(directions[3])
-		rotate(directions)
-		rotate(directions)
+		directions = [West, North, East, South]
+
+	wall_follow_step(directions)
