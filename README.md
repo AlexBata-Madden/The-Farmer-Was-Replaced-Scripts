@@ -7,9 +7,9 @@ My repo for tracking the scripts that I have used to complete the steam achievem
 ## Farming Scripts
 
 - [Hay](./Hay%20Farming/)
-- Wood
-- [Weird Substance](./Weird%20Substance%20Farming/)
+- [Wood](./Wood%20Farming/)
 - Carrots
+- [Weird Substance](./Weird%20Substance%20Farming/)
 - [Pumpkins](./Pumpkin%20Farming/)
 - [Sunflower](./Sunflower%20Farming/)
 - Cactus
