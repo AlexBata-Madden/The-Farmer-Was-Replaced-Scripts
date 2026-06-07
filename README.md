@@ -5,7 +5,8 @@
 My repo for tracking the scripts that I have used to complete the steam achievements for 'The Farmer Was Replaced'. Not all of the scripts are highly optimised, but they are good enough to hit the production rate necessary to get the achievements.
 
 ## Farming Scripts
-- Hay
+
+- [Hay](./Hay%20Farming/)
 - Wood
 - [Weird Substance](./Weird%20Substance%20Farming/)
 - Carrots
