@@ -20,10 +20,12 @@ The idea is to spawn drones in a grid formation, get the companion of the plant,
 
 ### Hay
 
-Note: Using hay_farm_polyculture.py. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 2000000000`
+Note: Using hay_farm_polyculture.py. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 2000000000`.
+
 ![hay_leaderboard](./img/hay_leaderboard.png)
 
 ### Hay_Single
 
-Note: Using hay_farm_single.py. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 100000000`
+Note: Using hay_farm_single.py. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 100000000`.
+
 ![hay_single_leaderboard](./img/hay_single_leaderboard.png)
