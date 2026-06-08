@@ -10,7 +10,13 @@
 
 ## Implementation
 
-The idea is to spawn drones in a grid formation, get the companion of the plant, go to that location, plant the companion plant and then harvest the carrot. Ideally, you want to stock up on power, water and fertilizer to guarentee the achievement unlock, but you can still run it without those, but the rates will be lower.
+The idea is to spawn drones in a grid formation, get the companion of the plant, go to that location, plant the companion plant, and then harvest the carrot. Ideally, you want to stock up on power, water, and fertilizer to guarantee the achievement unlock. You can still run it without those, but the rates will be lower.
+
+## Scripts
+
+- `carrot_farm.py`: Multi-drone carrot farming.
+- `carrot_farm_single.py`: Single-drone carrot farming.
+- `carrot_farm_polyculture.py`: Polyculture carrot farming.
 
 ## Achievements
 
@@ -20,12 +26,12 @@ The idea is to spawn drones in a grid formation, get the companion of the plant,
 
 ### Carrot
 
-Note: Using carrot_farm_polyculture.py. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 2000000000`.
+Note: Using `carrot_farm_polyculture.py`. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 2000000000`.
 
 ![carrot_leaderboard](./img/carrot_leaderboard.png)
 
 ### Carrot_Single
 
-Note: Using carrot_farm_polyculture.py and deleting the code that spawns multiple drones. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 100000000`.
+Note: Using `carrot_farm_polyculture.py` and deleting the code that spawns multiple drones. To make the code leaderboard applicable, change the `while True` in the drone functions to `while < 100000000`.
 
 ![carrot_single_leaderboard](./img/carrot_single_leaderboard.png)
