@@ -1,4 +1,4 @@
-# TheFarmerWasReplaced-Scripts
+# The-Farmer-Was-Replaced-Scripts
 
 <img width="1124" height="319" alt="image" src="https://github.com/user-attachments/assets/1c9f7b6f-dac6-4700-8bbc-a57d927a79a4" />
 
